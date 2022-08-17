@@ -8,8 +8,8 @@ app.get("/", (req, res) => {
 app.use(express.json());
 app.use(router);
 
-app.listen(process.env.REST_PORT, () => {
-  console.log(`Server Running on ${process.env.REST_PORT}`);
+app.listen(process.env.PORT, () => {
+  console.log(`Server Running on ${process.env.PORT}`);
 });
 
 // user - id, email, name, password
