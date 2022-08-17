@@ -1,0 +1,111 @@
+{
+	"variables": [],
+	"info": {
+		"name": "lendsqr",
+		"_postman_id": "d1056f68-d112-a55d-dee7-1361d48d7c55",
+		"description": "A payment system",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "valid  transfer ",
+			"request": {
+				"url": "localhost:4000/users",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"first_name\": \"thomzy\",\n\"last_name\": \"arteta\",\n\"email\": \"ajuwonsamuel@yahoo.com\",\n\"password\": \"ajupssag7K\",\n\"dob\": \"1998-02-5\",\n\"phonenumber\": 8036619062\n\t\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "valid  user creation",
+			"request": {
+				"url": "localhost:4000/users",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"first_name\": \"thomzy\",\n\"last_name\": \"arteta\",\n\"email\": \"ajuwonsamuel@yahoo.com\",\n\"password\": \"ajupssag7K\",\n\"dob\": \"1998-02-5\",\n\"phonenumber\": \"8036619062\"\n\t\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "valid  account creation",
+			"request": {
+				"url": "localhost:4000/accounts",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"user_id\": 1,\n\"amounts\": 2000,\n\"currency\": \"NGN\"\n\n\t\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "valid  fund account",
+			"request": {
+				"url": "localhost:4000/accounts",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"user_id\": 1,\n\"amounts\": 2000,\n\"currency\": \"NGN\"\n\n\t\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "valid  withdraw funds",
+			"request": {
+				"url": "localhost:4000/accounts",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"user_id\": 1,\n\"amounts\": 2000,\n\"currency\": \"NGN\"\n\n\t\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

@@ -156,7 +156,7 @@ module.exports = {
         amounts: account[0].amounts, 
       });
 
-    if (accountUpdate && accountUpdate.length) {
+    if (accountUpdate) {
       let message = "";
       if (type == "fund") {
         message = "Account Funding was successful";
